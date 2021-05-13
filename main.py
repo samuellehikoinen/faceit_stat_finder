@@ -100,12 +100,23 @@ def tulosta_tiedot(tiedot):
         matsit = tt[int(tt.index('Matches:'))+17:tt.index('<',int(tt.index('Matches:')+17))]
         voittoprosentti = tt[int(tt.index('Winrt:'))+15:tt.index('<',int(tt.index('Winrt:')+15))]
         kd = tt[int(tt.index('K/D:'))+13:tt.index('<',int(tt.index('K/D:')+13))]
+        hs = tt[int(tt.index('HS: <strong>'))+12:tt.index('<',int(tt.index('HS: <strong>')+12))]
         
+        level = 1
+        if(int(elo) >  800): level = 2
+        if(int(elo) >  950): level = 3
+        if(int(elo) > 1100): level = 4
+        if(int(elo) > 1250): level = 5
+        if(int(elo) > 1400): level = 6
+        if(int(elo) > 1550): level = 7
+        if(int(elo) > 1700): level = 8
+        if(int(elo) > 1850): level = 9
+        if(int(elo) > 2000): level = 10
+
         print("Nimi: " + nimi)
-        print("ELO: " + elo)
-        print("Matsit: " + matsit)
-        print("Win %: " + voittoprosentti)
-        print("K/D: " + kd)
+        print("ELO: " + elo + "\t(taso: " + str(level)+")")
+        print("Matsit: " + matsit + "\t(voitot: " + voittoprosentti + ")")
+        print("K/D: " + kd + "\t(HS: " + hs + ")")
     except:
         print("Käyttäjää "+nimi+" ei löytynyt Faceitista!")
     return
@@ -123,7 +134,7 @@ def ohje():
 
 #Silmukka pitää komentoikkunaa auki, kunnes aliohjelman päästä se suljetaan
 if __name__ == '__main__':
-    print("===CS:GO match players Faceit stats===\nv1.2.4\n©Samuel Lehikoinen 2021\n")
+    print("===CS:GO match players Faceit stats===\nv1.2.5\n©Samuel Lehikoinen 2021\n")
     print("Ohjelman käyttöohjeet aukeavat komennolla 'ohjeet'")
     while True:
         hae_tiedot()
