@@ -31,7 +31,7 @@ def hae_tiedot():
     #jos käyttäjä sulkee ikkunan manuaalisesti esim. näppäinoikotiellä
     except KeyboardInterrupt:
         print("Ohjelma keskeytyi manuaalisesti käyttäjän toimesta")
-        return
+        sys.exit()
 
     #syote oletettavasti muotoa:
     # 3 2 "Samua" STEAM_0:0:47889092 04:20 69 0 active 420420
