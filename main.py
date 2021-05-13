@@ -134,7 +134,7 @@ def ohje():
 
 #Silmukka pitää komentoikkunaa auki, kunnes aliohjelman päästä se suljetaan
 if __name__ == '__main__':
-    print("===CS:GO match players Faceit stats===\nv1.2.5\n©Samuel Lehikoinen 2021\n")
+    print("===CS:GO match players Faceit stats===\nv1.2.6\n©Samuel Lehikoinen 2021\n")
     print("Ohjelman käyttöohjeet aukeavat komennolla 'ohjeet'")
     while True:
         hae_tiedot()
