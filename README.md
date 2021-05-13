@@ -7,15 +7,19 @@ A program that helps user to find Counter-Strike Global Offensive server's playe
 ## Getting started
 
 Clone the project
+
 `git clone https://github.com/samuellehikoinen/faceit_stat_finder.git`
 
 Install requirements
+
 `pip install -r requirements.txt`
 
 Create .exe file from main.py
+
 `pyinstaller -F faceit_stat_finder/main.py`
 
 Run the main.exe file, that is in the newly created dist file
+
 `dist/main.exe`
 
 ## Usage
