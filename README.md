@@ -10,9 +10,9 @@ Clone the project
 
 `git clone https://github.com/samuellehikoinen/faceit_stat_finder.git`
 
-Install requirements
+Install requirements from requirements.txt
 
-`pip install -r requirements.txt`
+`pip install -r faceit_stat_finder/requirements.txt`
 
 Create .exe file from main.py
 
