@@ -20,7 +20,7 @@ Create .exe file from main.py
 
 Run the main.exe file, that is in the newly created dist file
 
-`dist/main.exe`
+`faceit_stat_finder/dist/main.exe`
 
 ## Usage
 
