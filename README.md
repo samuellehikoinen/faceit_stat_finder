@@ -37,3 +37,4 @@ Command `ohjeet` shows the instructions (currently only in finnish).
 ## Acknowledgements
 * Lehikoinen J. for propositions
 * Virtanen O. for testing
+* Hamari T. for pinpointing an issue
