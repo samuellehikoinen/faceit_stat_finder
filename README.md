@@ -37,4 +37,4 @@ Command `ohjeet` shows the instructions (currently only in finnish).
 ## Acknowledgements
 * Lehikoinen J. for propositions
 * Virtanen O. for testing
-* Hamari T. for pinpointing an issue
+* Hamari T. for pinpointing an issue and creating [discord integration](https://github.com/tpjham/discordFaceitStatFinder) that is more efficient
